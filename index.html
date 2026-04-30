@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Imam Arsyad Atmadja — Portfolio</title>
+  <meta name="description" content="Portofolio Rian Pramana: Web Developer – Proyek, Sertifikat, dan Tech Stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.js">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="dot"></span> Muhammad Imam Arsyad Atmadja</a>
+      <div class="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="container hero">
+    <div>
+      <span class="badge">Web Developer • Indonesia</span>
+      <h1 class="title">Hello, I'm<br />Atma</h1>
+      <p class="subtitle">Menciptakan website yang modern, cepat, dan mudah digunakan. Fokus pada <b>HTML</b>,
+        <b>CSS</b> dan <b>JavaScript</b></p>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#portfolio">Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero-ill">
+      <!-- Ilustrasi/preview gambar dummy agar mirip video -->
+      <img alt="Preview UI" src="profile.png" />
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-sub">Passionate about creating beautiful and functional web experiences. I love turning ideas into
+      reality through clean code and modern design. Currently learning and growing in the world of web development.
+    </p>
+    <div class="about">
+      <div class="card">
+        <h3>Ringkas</h3>
+        <p>Mahasiswa yang aktif mengerjakan proyek web pribadi. Saat ini memperlajari lebih lanjut mengenai pengembangan
+          web.
+        <div class="stats">
+          <div class="stat"><b>10+</b>
+            <div>Project Latihan</div>
+          </div>
+          <div class="stat"><b>2</b>
+            <div>Semester Kuliah</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Keahlian</h3>
+        <ul>
+          <li>Front-end: HTML, CSS, JavaScript</li>
+          <li>Algoritma: Bubble, Selection, Quick, Merge Sort</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Responsive</span>
+          <span class="tag">Dark UI</span>
+          <span class="tag">Clean Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="container">
+    <h2 class="section-title">Portfolio Showcase</h2>
+    <p class="section-sub">Explore journey melalui <b>Projects</b>, dan <b>Tech Stack</b>. Pilih tab untuk melihat
+      konten.</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="projects" role="tab">Projects</button>
+
+      <button class="tab" data-tab="stack" role="tab">Tech Stack</button>
+    </div>
+
+    <div id="tab-projects" class="tab-panel">
+      <div class="grid">
+        <article class="card project">
+          <h4>Web Profile</h4>
+          <p>Website Profile berisikan pengenalan diri.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </article>
+        <article class="card project">
+          <h4>Halaman Biografi</h4>
+          <p>Web halaman Biografi dari Karakter Bochi</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </article>
+        <article class="card project">
+          <h4>Login Page</h4>
+          <p>Membuat halaman login tanpa database.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </article>
+        <article class="card project">
+          <h4>Ucapan Ulang Tahun</h4>
+          <p>Membuat Halaman Ulang Tahun Sederhana.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+    <div id="tab-stack" class="tab-panel" hidden>
+      <div class="grid">
+        <article class="card project">
+          <h4>HTML5</h4>
+          <p>Semantic, SEO dasar</p>
+        </article>
+        <article class="card project">
+          <h4>CSS3</h4>
+          <p>Flexbox, Grid, Animasi</p>
+        </article>
+        <article class="card project">
+          <h4>JavaScript</h4>
+          <p>DOM, ES6 Modules</p>
+        </article>
+        <article class="card project">
+          <h4>BOOSTRAP</h4>
+          <p>Utility-first</p>
+        </article>
+        <article class="card project">
+          <h4>Git</h4>
+          <p>Version control</p>
+        </article>
+        <article class="card project">
+          <h4>Canva</h4>
+          <p>Desain dasar</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-sub">Ada pertanyaan? Kirim pesan di sini.
+    </p>
+    <div class="contact-wrap">
+      <form id="contactForm" class="card" onsubmit="sendWA(event)">
+        <label>Nama<br><input class="input" name="name" placeholder="Nama Anda" required></label><br><br>
+        <label>Email<br><input class="input" name="email" type="email" placeholder="email@contoh.com"
+            required></label><br><br>
+        <label>Pesan<br><textarea class="input" name="message" placeholder="Tulis pesan..."></textarea></label>
+        <div class="form-actions" style="margin-top:12px">
+          <button class="btn primary" type="submit">Send Message</button>
+          <a class="btn" href="mailto:rianpramana@students.polmed.ac.id">Email</a>
+        </div>
+        <p style="color:var(--muted); margin-top:10px">WA: <a href="https://wa.me/6281265251062"
+            target="_blank">0812-6525-1062</a></p>
+      </form>
+
+      <div class="card">
+        <h3>Komentar</h3>
+        <form id="commentForm" onsubmit="addComment(event)" style="margin-top:8px">
+          <input class="input" name="cname" placeholder="Nama" required>
+          <textarea class="input" name="cmsg" placeholder="Komentar" style="margin-top:10px" required></textarea>
+          <button class="btn" type="submit" style="margin-top:10px">Post Comment</button>
+        </form>
+        <div id="comments"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-contact" id="contact">
+                <h1>Get In Touch</h1>
+                <div class="contact">
+                    <a href="https://www.instagram.com/arsyad.n30/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <h6>Instagram</h6>
+                    </a>
+                    <a href="https://web.facebook.com/atma.sayaaa?locale=id_ID" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <h6>Facebook</h6>
+                    </a>
+                    <a href="https://github.com/Atma-349" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <h6>GitHub</h6>
+                    </a>
+                </div>
+            </div>
+
+  <footer>
+    © <span id="y"></span> Muhammad Imam Arsyad Atmadja • Binjai, Indonesia
+  </footer>
+
+</body>
+
+</html>
