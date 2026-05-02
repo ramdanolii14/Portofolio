@@ -35,7 +35,7 @@ function sendWA(e) {
   const email = fd.get("email");
   const message = fd.get("message");
   const text = encodeURIComponent(
-    `Halo, saya ${name} (20%${email}20%)\n${message}`,
+    `Halo, saya ${name} (${email})\n${message}`,
   );
   // Nomor WA Rian (sesuai data user): 0812-7538-0001 -> 6281275380001
   const url = `https://wa.me/6281265251062?text=${text}`;
